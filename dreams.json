@@ -22,6 +22,13 @@
       "destination": "China",
       "lat": 35.86,
       "lng": 104.2
+    },
+    {
+      "id": "p17795408849254obe7",
+      "name": "Raven Steele",
+      "destination": "Norfolk Island",
+      "lat": -29.04,
+      "lng": 167.95
     }
   ]
 }
