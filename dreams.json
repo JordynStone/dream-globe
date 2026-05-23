@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "updated": "2026-05-23",
+  "pins": [
+    {
+      "id": "p1779507149564czjzz",
+      "name": "Jordyn",
+      "destination": "Vietnam",
+      "lat": 14.06,
+      "lng": 108.28
+    },
+    {
+      "id": "p177950718864066jrr",
+      "name": "Bosslady Abc",
+      "destination": "Dominican Republic",
+      "lat": 18.74,
+      "lng": -70.16
+    },
+    {
+      "id": "p1779507247076nh9no",
+      "name": "Htenywg Cost",
+      "destination": "China",
+      "lat": 35.86,
+      "lng": 104.2
+    }
+  ]
+}
