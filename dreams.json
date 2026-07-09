@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated": "2026-05-23",
+  "updated": "2026-07-09",
   "pins": [
     {
       "id": "p1779507149564czjzz",
@@ -29,6 +29,13 @@
       "destination": "Norfolk Island",
       "lat": -29.04,
       "lng": 167.95
+    },
+    {
+      "id": "p178360474760687v1s",
+      "name": "Digital Shinebright",
+      "destination": "Greece",
+      "lat": 39.07,
+      "lng": 21.82
     }
   ]
 }
