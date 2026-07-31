@@ -29,14 +29,19 @@ header{color:var(--cream);padding:18px 24px;text-align:center;position:relative;
   background:
     radial-gradient(900px 400px at 15% -30%, rgba(212,165,116,0.32), rgba(212,165,116,0) 70%),
     radial-gradient(760px 380px at 88% 130%, rgba(63,163,122,0.26), rgba(63,163,122,0) 70%),
-    linear-gradient(160deg, #1B403C 0%, #142E2C 58%, #0E211F 100%)}
+    linear-gradient(160deg, #1B403C 0%, #142E2C 58%, #0E211F 100%);
+  z-index:1}
 .admin-tg{position:absolute;top:50%;right:18px;transform:translateY(-50%);background:transparent;border:1px solid rgba(248,246,240,.25);color:var(--cream);opacity:.35;cursor:pointer;font-size:22px;width:28px;height:28px;border-radius:14px;padding:0;font-family:inherit;font-weight:bold;display:flex;align-items:center;justify-content:center;line-height:1}
 .admin-tg:hover{opacity:.9;background:rgba(248,246,240,.1)}
 header h1{font-size:22px;font-weight:700;letter-spacing:-0.01em}
 header p{font-size:13px;opacity:.85;margin-top:4px}
+/* The map contours the community has behind its cream, exactly as they are
+   drawn there: barely-there teal and coral lines, the whole set at half
+   strength, sitting behind everything and invisible to the mouse. */
+.sf-contours{position:fixed;inset:0;width:100%;height:100%;overflow:hidden;pointer-events:none;z-index:0;opacity:.5}
 /* The globe card is only ever as wide as the globe itself, so no empty white
    is left beside it. The pair is centred on the page instead of stretched. */
-.app{display:grid;grid-template-columns:auto 320px;justify-content:center;gap:16px;padding:16px;max-width:1500px;margin:0 auto}
+.app{display:grid;grid-template-columns:auto 320px;justify-content:center;gap:16px;padding:16px;max-width:1500px;margin:0 auto;position:relative;z-index:1}
 /* Both panels are cards now: a gold rule on top and a teal-tinted lift. */
 .left{width:min(calc(100vh - 230px),calc(100vw - 400px));align-self:start;background:#fff;border-radius:16px;border-top:3px solid var(--gold);overflow:hidden;box-shadow:0 10px 30px rgba(44,95,93,.09)}
 .admin{display:none;padding:14px 16px;gap:10px;align-items:flex-end;flex-wrap:wrap;
@@ -117,6 +122,20 @@ svg.globe:active{cursor:grabbing}
 </style>
 </head>
 <body>
+
+<svg class="sf-contours" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <g fill="none" stroke="#2C5F5D" stroke-opacity=".10" stroke-width="1.1">
+    <path d="M-60 210 C 240 130, 430 300, 700 235 S 1180 90, 1520 200" />
+    <path d="M-60 260 C 250 185, 440 350, 705 288 S 1185 145, 1520 252" />
+    <path d="M-60 312 C 262 240, 452 402, 712 342 S 1192 200, 1520 306" />
+    <path d="M-60 620 C 260 700, 470 545, 730 612 S 1200 742, 1520 645" />
+    <path d="M-60 672 C 268 752, 480 598, 738 664 S 1205 792, 1520 697" />
+  </g>
+  <g fill="none" stroke="#E8A87C" stroke-opacity=".16" stroke-width="1.1">
+    <path d="M-60 366 C 272 296, 462 456, 720 396 S 1198 256, 1520 360" />
+    <path d="M-60 566 C 254 646, 462 492, 722 558 S 1196 688, 1520 592" />
+  </g>
+</svg>
 
 <header>
   <h1>Solo & Fearless Dream Destinations</h1>
